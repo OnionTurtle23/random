@@ -1,0 +1,9 @@
+def calcculate_total(price, percent):
+    percent = percent/100
+    total = price + (price * percent)
+    print(round(total, 2))
+
+price = float(input("Please enter the amount of the bill before tip: "))
+percent = int(input("Please enter the percentage you would like to tip: "))
+
+calcculate_total(price, percent)
